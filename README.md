@@ -6,8 +6,9 @@ $$\{0, 1, \sin{x}, \cos{x}, \sin{2x}, \cos{2x},...\sin{nx},\cos{nx},...,\sin{mx}
 
 任意取其中的两个函数均为正交，例如
 
-$$ \int_{-\pi}^{\pi}1\cdot\sin{x} = 0$$
-$$ \int_{-\pi}^{\pi}\sin{x}\cdot\cos{x} = 0$$
+$$ \begin{aligned}\int_{-\pi}^{\pi}1\cdot\sin{x} &= 0 \\
+\int_{-\pi}^{\pi}\sin{x}\cdot\cos{x} &= 0
+\end{aligned}$$
 
 如果取两个相同函数进行积分，则
 $$ \begin{aligned}
