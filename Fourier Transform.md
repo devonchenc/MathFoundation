@@ -292,7 +292,7 @@ $$\begin{equation}
 \left\lbrace
 \begin{aligned}
 f(t) &= \sum_{n=-\infty}^{\infty}C_n\cdot e^{inwt} \\
-C_n &= \frac{1}{T}\int_{0}^{T}f(t)e^{-inwt} dt, -{\infty} <n < {\infty} \\
+C_n &= \frac{1}{T}\int_{0}^{T}f(t)e^{-inwt} dt, {\infty} \\
 w &= \frac{2\pi}{T}
 \end{aligned}
 \right.
@@ -314,7 +314,7 @@ $$\begin{equation}
 \left\lbrace
 \begin{aligned}
 f(t)&=\sum_{n=-\infty}^{\infty}C_n\cdot e^{inw_0t} \\
-C_n &= \frac{1}{T}\int_{-\frac{2}{T}}^{\frac{2}{T}}f(t)e^{-inw_0t} dt, -{\infty}<n <{\infty} \\
+C_n &= \frac{1}{T}\int_{-\frac{2}{T}}^{\frac{2}{T}}f(t)e^{-inw_0t} dt -{\infty}<n <{\infty} \\
 w_0 &= \frac{2\pi}{T}
 \end{aligned}
 \right.
