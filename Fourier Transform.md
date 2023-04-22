@@ -366,6 +366,7 @@ $$ \int_{-\infty}^{\infty}f(t)\delta(t-t_0)dt = f(t_0) \tag{10} $$
 
 ### 6.1.2 离散变量
 连续变量 $x$ 在 $x=0$ 处的单位冲激函数表示为 $\delta(x)$，定义如下：
+
 $$\begin{equation}
 \delta(x)=
 \left\{
@@ -375,11 +376,15 @@ $$\begin{equation}
 \end{aligned}
 \right.\}
 \end{equation}$$
+
 很明显，该定义也满足公式(9)的离散等效形式：
+
 $$\sum_{x=-\infty}^{\infty}\delta(x)=1$$
 
 离散变量的采样特性有如下形式：
+
 $$ \sum_{x=-\infty}^{\infty}f(x)\delta(x)=f(0) $$
+
 $$ \sum_{x=-\infty}^{\infty}f(x)\delta(x-x_0)=f(x_0) $$
 
 我们可以看到，采样特性可以简单地得到冲激位置处的函数值。
