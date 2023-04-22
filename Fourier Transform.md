@@ -93,27 +93,27 @@ $$ \therefore b_n = \frac{1}{\pi}\int_{-\pi}^{\pi}f(x)\sin{nx}dx $$
 
 $$ \begin{equation}
 \left\lbrace
-\begin{aligned} \tag{2}
+\begin{aligned}
 f(x) &= \frac{a_0}{2} + \sum_{n=1}^{\infty}(a_n\cos{nx}+b_n\sin{nx}) \\
 a_0 &= \frac{1}{\pi}\int_{-\pi}^{\pi}f(x)dx \\
 a_n &= \frac{1}{\pi}\int_{-\pi}^{\pi}f(x)\cos{nx}dx \\
 b_n &= \frac{1}{\pi}\int_{-\pi}^{\pi}f(x)\sin{nx}dx
 \end{aligned}
 \right.
-\end{equation}$$
+\end{equation} \tag{2}$$
 
 # 3. 将周期为T的函数 $f(t)$ ，展开为三角函数的加和
 
 $$ \begin{equation}
 \left\lbrace
-\begin{aligned} \tag{3}
+\begin{aligned}
 f(t) &= \frac{a_0}{2} +\sum_{n=1}^{\infty}(a_n\cos{nwt}+b_n\sin{nwt}) \\
 a_0 &= \frac{2}{T}\int_{0}^{T}f(t)dt\\
 a_n &= \frac{2}{T}\int_{0}^{T}f(t)\cos{nwt}dt\\
 b_n &= \frac{2}{T}\int_{0}^{T}f(t)\sin{nwt}dt
 \end{aligned}
 \right.
-\end{equation}$$
+\end{equation} \tag{3}$$
 
 其中 $w$ 为基频率
 
@@ -312,13 +312,13 @@ $$ f(t) = ... + C_1 e^{iwt} + C_2 e^{i2wt} + C_3 e^{i3wt} +... \tag{5}$$
 
 $$\begin{equation}
 \left\lbrace
-\begin{aligned} \tag{6}
+\begin{aligned}
 f(t)&=\sum_{n=-\infty}^{\infty}C_n\cdot e^{inw_0t} \\
 C_n &= \frac{1}{T}\int_{-\frac{2}{T}}^{\frac{2}{T}}f(t)e^{-inw_0t} dt, -\infty<n <\infty \\
 w_0 &= \frac{2\pi}{T}
 \end{aligned}
 \right.
-\end{equation}$$
+\end{equation} \tag{6}$$
 
 然后将 $\frac{1}{T} = \frac{w_0}{2\pi}$ 代入上式
 
@@ -342,12 +342,12 @@ $$ f(t) = \frac{1}{2\pi} \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}f(t)e^{-i
 
 $$\begin{equation}
 \left\lbrace
-\begin{aligned} \tag{8}
+\begin{aligned}
 F(w) &= \int_{-\infty}^{\infty}f(t)e^{-iwt} dt  \\
 f(t) &= \frac{1}{2\pi} \int_{-\infty}^{\infty} F(w) e^{iwt}dw
 \end{aligned}
 \right.
-\end{equation}$$
+\end{equation} \tag{8}$$
 
 公式(8)即为傅里叶变换和逆变换。
 
