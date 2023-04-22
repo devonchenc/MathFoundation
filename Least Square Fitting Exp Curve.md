@@ -76,6 +76,7 @@ n \Sigma (xy) - \Sigma{x}\Sigma{y}\\
 \end{bmatrix}$$
 
 因此
+
 $$ \begin{aligned}
 b &= \frac{n \Sigma (xy) - \Sigma{x}\Sigma{y}}{n\Sigma{x^2}-(\Sigma{x})^2}\\
 \log{a} &= \frac{\Sigma {x^2}\Sigma{y} - \Sigma x \Sigma{(xy)}}{n\Sigma{x^2}-(\Sigma{x})^2}\\
