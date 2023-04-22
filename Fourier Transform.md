@@ -79,7 +79,7 @@ $$ \begin{aligned} \int_{-\pi}^{\pi}f(x)\cos{nx}dx
 
 $$ \therefore a_n = \frac{1}{\pi}\int_{-\pi}^{\pi}f(x)\cos{nx}dx $$
 
-## 2.3 求$b_n$
+## 2.3 求 $b_n$
 
 $$ \begin{aligned} \int_{-\pi}^{\pi}f(x)\sin{nx}dx
 &= \int_{-\pi}^{\pi}b_n\sin{nx}\cdot\sin{nx}dx \\
@@ -219,7 +219,7 @@ $$ b_n = \frac{1}{n\pi}(2+2\cos{n\pi}) = \frac{4}{n\pi} $$
 汇总：
 
 $$f(t) = \sum_{n=1}^{\infty}\frac{4}{\pi}\cdot \frac{\sin{n\pi t}}{n}, n=1,3,5,7...$$
-可以看出，$f(t)$ 由一系列的正弦函数组成，分别为
+可以看出， $f(t)$ 由一系列的正弦函数组成，分别为
 
 $$f(t) = \frac{4}{\pi}(\sin{\pi t}+\frac{1}{3}\sin{3\pi t}+\frac{1}{5}\sin{5\pi t}+...)$$
 ![img](images/sin.png)
@@ -424,7 +424,7 @@ $$ f_k = \int_{-\infty}^{\infty}f(t)\delta(t-k\Delta T)dt=f(k\Delta T) ,k=...,-2
 这里利用到了公式(10)中给出的冲激函数 $\delta$ 的采样特性。
 
 ## 6.3 由采样后的函数的连续变换得到DFT
-采样后的函数我们记作 $\tilde{f}(t)$，它的傅里叶变换记作$\tilde{F}(\mu)$，根据傅里叶变换的定义有：
+采样后的函数我们记作 $\tilde{f}(t)$，它的傅里叶变换记作 $\tilde{F}(\mu)$ ，根据傅里叶变换的定义有：
 
 $$ \tilde{F}(\mu) = \int_{-\infty}^{\infty}\tilde{f}(t)e^{-i2\pi \mu t}dt $$
 
