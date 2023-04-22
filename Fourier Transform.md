@@ -290,13 +290,13 @@ C_n &= \frac{a_n +ib_n}{2} \\
 
 $$\begin{equation}
 \left\lbrace
-\begin{aligned} \tag{4}
+\begin{aligned}
 f(t)&=\sum_{n=-\infty}^{\infty}C_n\cdot e^{inwt} \\
 C_n &= \frac{1}{T}\int_{0}^{T}f(t)e^{-inwt} dt, -\infty<n <\infty \\
 w &= \frac{2\pi}{T}
 \end{aligned}
 \right.
-\end{equation}$$
+\end{equation} \tag{4}$$
 
 可以这么理解上述公式： $f(t)$ 中的 $e^{inwt}$ 为系数，$C_n$ 为一系列不同的函数。
 在频域（或称之为复平面）展开 $f(t)$，就可以得到
@@ -322,10 +322,10 @@ w_0 &= \frac{2\pi}{T}
 
 然后将 $\frac{1}{T} = \frac{w_0}{2\pi}$ 代入上式
 
-$$\begin{aligned} \tag{7}
+$$\begin{aligned}
 f_T(t)&=\sum_{n=-\infty}^{\infty}\frac{1}{T}\int_{-\frac{2}{T}}^{\frac{2}{T}}f_T(t)e^{-inw_0t} dt\cdot e^{inw_0t} \\
 &= \sum_{n=-\infty}^{\infty}\frac{w_0}{2\pi}\int_{-\frac{2}{T}}^{\frac{2}{T}}f_T(t)e^{-inw_0t} dt\cdot e^{inw_0t}
-\end{aligned}$$
+\end{aligned} \tag{7}$$
 
 当 $T\rightarrow\infty$ 时，上式积分上下限
 
