@@ -11,6 +11,7 @@ $$ \begin{aligned}\int_{-\pi}^{\pi}1\cdot\sin{x} &= 0 \\
 \end{aligned}$$
 
 如果取两个相同函数进行积分，则
+
 $$ \begin{aligned}
 \int_{-\pi}^{\pi}\cos{nx}\cdot\cos{nx}
 &= \int_{-\pi}^{\pi}\frac{1}{2}(1+\cos{2nx})\\
@@ -44,6 +45,7 @@ $$ \begin{equation}
 # 2. 一个周期为$2\pi$的函数$f(x)$，可以展开为三角函数的加和
 
 利用第一节中给出的正交基，可以写为：
+
 $$ f(x) = \sum_{n=0}^{\infty}a_n\cos{nx}+\sum_{n=0}^{\infty}b_n\sin{nx} $$
 
 更常见的写法是：（两种写法的$a_0$差了一倍）
@@ -393,15 +395,18 @@ $$ f_k = \int_{-\infty}^{\infty}f(t)\delta(t-k\Delta T)dt=f(k\Delta T) ,k=...,-2
 
 ## 6.3 由采样后的函数的连续变换得到DFT
 采样后的函数我们记作 $\tilde{f}(t)$，它的傅里叶变换记作$\tilde{F}(\mu)$，根据傅里叶变换的定义有：
+
 $$ \tilde{F}(\mu) = \int_{-\infty}^{\infty}\tilde{f}(t)e^{-i2\pi \mu t}dt $$
 
 其中 $\mu$ 表示连续频率变量。使用采样公式(11)代替上式中的 $\tilde{f}(\mu)$，则有：
+
 $$ \begin{aligned} \tag{13}
 \tilde{F}(\mu) &= \int_{-\infty}^{\infty}\tilde{f}(t)e^{-i2\pi \mu t}dt \\
 &= \int_{-\infty}^{\infty}\sum_{n=-\infty}^{\infty}f(t)\delta(t-n{\Delta T})e^{-i2\pi \mu t}dt \\
 & = \sum_{n=-\infty}^{\infty}\int_{-\infty}^{\infty}f(t)\delta(t-n{\Delta T})e^{-i2\pi \mu t}dt \\
 &= \sum_{n=-\infty}^{\infty} f_n e^{-i2\pi \mu n\Delta T}
 \end{aligned} $$
+
 其中，最后一步使用了公式(12)。虽然 $f_n$ 是离散函数，但是其傅里叶变换 $\tilde{F}(\mu)$ 是周期为 $\frac{1}{\Delta T}$ 的无限周期连续函数。因此，我们需要表征 $\tilde{F}(\mu)$ 的一个周期，而对一个周期采样是DFT的基础。
 
 假设我们想要在周期 $\mu=0$ 到 $\mu=\frac{1}{\Delta T}$ 之间得到 $\tilde{F}(\mu)$ 的 $M$ 个等间距的样本。这可以通过在如下频率处采样得到：
