@@ -299,6 +299,7 @@ $$ f(t) = ... + C_1 e^{iwt} + C_2 e^{i2wt} + C_3 e^{i3wt} +... \tag{5}$$
 如果函数的周期 $T\rightarrow\infty$ ，即函数$f(t)$ 为非周期函数，则$w_0\rightarrow0$，所以频域展开形式(5)中各项将无限靠近，从而变成了连续的形式。
 
 我们将式(4)中的 $w$ 替换为 $w_0$，并将 $C_n$ 中积分上下限 $\int_{0}^{T}$ 变为 $\int_{-\frac{2}{T}}^{\frac{2}{T}}$，则有
+
 $$\begin{equation}
 \left\{
 \begin{aligned} \tag{6}
@@ -310,21 +311,25 @@ w_0 &= \frac{2\pi}{T}
 \end{equation}$$
 
 然后将 $\frac{1}{T} = \frac{w_0}{2\pi}$ 代入上式
+
 $$\begin{aligned} \tag{7}
 f_T(t)&=\sum_{n=-\infty}^{\infty}\frac{1}{T}\int_{-\frac{2}{T}}^{\frac{2}{T}}f_T(t)e^{-inw_0t} dt\cdot e^{inw_0t} \\
 &= \sum_{n=-\infty}^{\infty}\frac{w_0}{2\pi}\int_{-\frac{2}{T}}^{\frac{2}{T}}f_T(t)e^{-inw_0t} dt\cdot e^{inw_0t}
 \end{aligned}$$
 
 当 $T\rightarrow\infty$ 时，上式积分上下限
+
 $$ \int_{-\frac{2}{T}}^{\frac{2}{T}}dt \rightarrow \int_{-\infty}^{\infty}dt $$
 $$ nw_0 \rightarrow w $$
 $$ \sum_{n=-\infty}^{\infty} w_0 \rightarrow \int_{-\infty}^{\infty}w $$
 
 将上式代入式(7)，可得
+
 $$ f(t) = \frac{1}{2\pi} \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}f(t)e^{-iwt} dt e^{iwt}dw $$
 
 我们可以将上式中的记作 $F(w)$，则有，
 ## 连续非周期函数 $f(t)$ 的傅里叶变换为：
+
 $$\begin{equation}
 \left\{
 \begin{aligned} \tag{8}
