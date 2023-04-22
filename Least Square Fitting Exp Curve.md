@@ -32,10 +32,11 @@ x_n & 1
 \end{bmatrix}$，$A = (b,\log{a})^T$
 
 由式(2)，可得
+
 $$ \begin{aligned}Y &= X\cdot A \\
 X^T Y &= X^T X A \\
 A &= (X^T X)^{-1}X^TY
-\end{aligned} \tag{3}$$
+\end{aligned} \tag{3} $$
 
 # 3. 求解
 
@@ -74,9 +75,9 @@ n \Sigma (xy) - \Sigma{x}\Sigma{y}\\
 \Sigma {x^2}\Sigma{y} - \Sigma x \Sigma{xy}
 \end{bmatrix}$$
 
-因此 $$
-\begin{aligned}
+因此
+$$ \begin{aligned}
 b &= \frac{n \Sigma (xy) - \Sigma{x}\Sigma{y}}{n\Sigma{x^2}-(\Sigma{x})^2}\\
 \log{a} &= \frac{\Sigma {x^2}\Sigma{y} - \Sigma x \Sigma{(xy)}}{n\Sigma{x^2}-(\Sigma{x})^2}\\
 a &= exp(\frac{\Sigma {x^2}\Sigma{y} - \Sigma x \Sigma{(xy)}}{n\Sigma{x^2}-(\Sigma{x})^2})
-\end{aligned}$$
+\end{aligned} $$

@@ -94,7 +94,7 @@ a_0 &= \frac{1}{\pi}\int_{-\pi}^{\pi}f(x)dx \\
 a_n &= \frac{1}{\pi}\int_{-\pi}^{\pi}f(x)\cos{nx}dx \\
 b_n &= \frac{1}{\pi}\int_{-\pi}^{\pi}f(x)\sin{nx}dx
 \end{aligned}
-\right.\}
+\right.
 \end{equation}$$
 
 # 3. 将周期为T的函数$f(t)$，展开为三角函数的加和
