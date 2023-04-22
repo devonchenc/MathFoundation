@@ -285,7 +285,7 @@ f(t)&=\sum_{n=-\infty}^{\infty}C_n\cdot e^{inwt} \\
 C_n &= \frac{1}{T}\int_{0}^{T}f(t)e^{-inwt} dt, -\infty<n <\infty \\
 w &= \frac{2\pi}{T}
 \end{aligned}
-\right.\}
+\right.
 \end{equation}$$
 
 可以这么理解上述公式：$f(t)$ 中的 $e^{inwt}$ 为系数，$C_n$ 为一系列不同的函数。
