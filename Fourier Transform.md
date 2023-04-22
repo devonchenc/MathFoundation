@@ -220,6 +220,7 @@ $$f(t) = \frac{4}{\pi}(\sin{\pi t}+\frac{1}{3}\sin{3\pi t}+\frac{1}{5}\sin{5\pi 
 $$ e^{i\theta} = \cos\theta + i\sin\theta $$
 
 $$ e^{-i\theta} = \cos\theta - i\sin\theta $$
+
 可以得出
 
 $$ \cos\theta = \frac{1}{2}(e^{i\theta}-e^{-i\theta}) $$
