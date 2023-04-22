@@ -32,13 +32,13 @@ $$ \begin{aligned}
 汇总：
 
 $$ \begin{equation}
-\left\{
+\left\lbrace
 \begin{aligned} \nonumber
 \int_{-\pi}^{\pi}\sin{nx}\cdot\cos{mx} &= 0 \\
 \int_{-\pi}^{\pi}\sin{nx}\cdot\sin{mx} &= 0, n \ne m\\
 \int_{-\pi}^{\pi}\cos{nx}\cdot\cos{mx} &= 0, n \ne m
 \end{aligned}
-\right.\}
+\right.
 \end{equation}$$
 
 
