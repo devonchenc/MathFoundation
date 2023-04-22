@@ -42,7 +42,7 @@ $$ \begin{equation}
 \end{equation}$$
 
 
-# 2. 一个周期为$2\pi$的函数$f(x)$，可以展开为三角函数的加和
+# 2. 一个周期为 $2\pi$ 的函数 $f(x)$ ，可以展开为三角函数的加和
 
 利用第一节中给出的正交基，可以写为：
 
@@ -54,14 +54,14 @@ $$ f(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty}(a_n\cos{nx}+b_n\sin{nx}) \tag{1} $
 
 如何计算出系数 $a_0,a_1,...,a_n,b_0,b_1,...,b_n$？
 
-## 2.1 求$a_0$
+## 2.1 求 $a_0$
 试将函数 $f(x)$ 在 $(-\pi, \pi)$ 区间进行积分，可得
 
 $$ \int_{-\pi}^{\pi}f(x)dx = \int_{-\pi}^{\pi}\frac{a_0}{2}dx = a_0\pi $$
 
 $$ \therefore a_0 = \frac{1}{\pi}\int_{-\pi}^{\pi}f(x)dx $$
 
-## 2.2 求$a_n$
+## 2.2 求 $a_n$
 
 $$ \int_{-\pi}^{\pi}f(x)\cos{mx}dx =\int_{-\pi}^{\pi}\frac{a_0}{2}\cos{mx}dx +   \int_{-\pi}^{\pi}a_n\cos{nx}\cdot\cos{mx}dx + \int_{-\pi}^{\pi}b_n\sin{nx}\cdot\cos{mx}dx$$
 
@@ -102,7 +102,7 @@ b_n &= \frac{1}{\pi}\int_{-\pi}^{\pi}f(x)\sin{nx}dx
 \right.
 \end{equation}$$
 
-# 3. 将周期为T的函数$f(t)$，展开为三角函数的加和
+# 3. 将周期为T的函数 $f(t)$ ，展开为三角函数的加和
 
 $$ \begin{equation}
 \left\{
@@ -205,6 +205,7 @@ b_n &= \frac{2}{T}\int_{0}^{T}f(t)\sin{nwt}dt \\
 &= \frac{1}{n\pi}(-\cos{n\pi}+1+\cos{2n\pi}-\cos{n\pi}) \\
 &= \frac{1}{n\pi}(2-2\cos{n\pi})
 \end{aligned}$$
+
 当 $n$ 为偶数时，
 
 $$ \cos{n\pi} = 1 $$
