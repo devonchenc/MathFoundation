@@ -218,6 +218,7 @@ $$f(t) = \frac{4}{\pi}(\sin{\pi t}+\frac{1}{3}\sin{3\pi t}+\frac{1}{5}\sin{5\pi 
 根据欧拉公式
 
 $$ e^{i\theta} = \cos\theta + i\sin\theta $$
+
 $$ e^{-i\theta} = \cos\theta - i\sin\theta $$
 可以得出
 
