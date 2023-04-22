@@ -293,7 +293,7 @@ $$\begin{equation}
 \begin{aligned}
 f(t) &= \sum_{n=-\infty}^{\infty}C_n\cdot e^{inwt} \\
 C_n &= \frac{a_n -ib_n}{2}, n=1,2,3,4,... \\
-w &= \frac{a_n+ib_n}{2},n=-1,-2,-3,-4,...
+w &= \frac{2\pi}{T}
 \end{aligned}
 \right.
 \end{equation} \tag{4}$$
