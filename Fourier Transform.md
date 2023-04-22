@@ -347,6 +347,7 @@ f(t) &= \frac{1}{2\pi} \int_{-\infty}^{\infty} F(w) e^{iwt}dw
 
 ### 6.1.1 连续变量
 连续变量 $t$ 在 $t=0$ 处的单位冲激函数表示为 $\delta(t)$，定义如下：
+
 $$\begin{equation}
 \delta(t)=
 \left\{
@@ -356,12 +357,19 @@ $$\begin{equation}
 \end{aligned}
 \right.\}
 \end{equation}$$
+
 冲激函数可看成是幅度无限、持续时间为0、具有单位面积的尖峰信号，因此有性质：
+
 $$ \int_{-\infty}^{\infty}\delta(t)dt=1 \tag{9} $$
+
 一个冲激函数具有采样特性：
+
 $$ \int_{-\infty}^{\infty}f(t)\delta (t)dt = f(0) $$
+
 更为一般采样特性：位于任意点 $t_0$ 的冲激，表示为 $\delta(t-t_0)$，采样特性变为：
+
 $$ \int_{-\infty}^{\infty}f(t)\delta(t-t_0)dt = f(t_0) \tag{10} $$
+
 例如，如果 $f(t)=\cos(t)$ ，使用冲激 $\delta(t-\pi)$ 得到结果 $f(\pi)=\cos(\pi)=-1$
 
 ### 6.1.2 离散变量
