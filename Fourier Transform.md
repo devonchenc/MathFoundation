@@ -288,7 +288,7 @@ C_n &= \frac{a_n +ib_n}{2} \\
 
 ## 综上所述，连续周期函数 $f(t)$ 的傅里叶级数为：
 
-$$\begin{equation}
+$$1=\begin{equation}
 \left\lbrace
 \begin{aligned}
 f(t)&=\sum_{n=-\infty}^{\infty}C_n\cdot e^{inwt} \\
@@ -296,7 +296,7 @@ C_n &= \frac{1}{T}\int_{0}^{T}f(t)e^{-inwt} dt, -\infty<n <\infty \\
 w &= \frac{2\pi}{T}
 \end{aligned}
 \right.
-\end{equation}$$
+\end{equation} \tag{4}$$
 
 可以这么理解上述公式： $f(t)$ 中的 $e^{inwt}$ 为系数， $C_n$ 为一系列不同的函数。
 在频域（或称之为复平面）展开 $f(t)$，就可以得到
