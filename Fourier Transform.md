@@ -92,7 +92,7 @@ $$ \therefore b_n = \frac{1}{\pi}\int_{-\pi}^{\pi}f(x)\sin{nx}dx $$
 汇总：
 
 $$ \begin{equation}
-\left\{
+\left\lbrace
 \begin{aligned} \tag{2}
 f(x) &= \frac{a_0}{2} + \sum_{n=1}^{\infty}(a_n\cos{nx}+b_n\sin{nx}) \\
 a_0 &= \frac{1}{\pi}\int_{-\pi}^{\pi}f(x)dx \\
@@ -105,14 +105,14 @@ b_n &= \frac{1}{\pi}\int_{-\pi}^{\pi}f(x)\sin{nx}dx
 # 3. 将周期为T的函数 $f(t)$ ，展开为三角函数的加和
 
 $$ \begin{equation}
-\left\{
+\left\lbrace
 \begin{aligned} \tag{3}
 f(t) &= \frac{a_0}{2} +\sum_{n=1}^{\infty}(a_n\cos{nwt}+b_n\sin{nwt}) \\
 a_0 &= \frac{2}{T}\int_{0}^{T}f(t)dt\\
 a_n &= \frac{2}{T}\int_{0}^{T}f(t)\cos{nwt}dt\\
 b_n &= \frac{2}{T}\int_{0}^{T}f(t)\sin{nwt}dt
 \end{aligned}
-\right.\}
+\right.
 \end{equation}$$
 
 其中 $w$ 为基频率
@@ -253,13 +253,13 @@ f(t) &= \frac{a_0}{2} + \sum_{n=1}^{\infty}(a_n\cos{nwt}+b_n\sin{nwt}) \\
 其中
 
 $$Cn = \begin{equation}
-\left\{
+\left\lbrace
 \begin{aligned} \nonumber
 &\frac{a_0}{2}, n=0\\
 &\frac{a_n -ib_n}{2}, n=1,2,3,4,... \\
 &\frac{a_n+ib_n}{2},n=-1,-2,-3,-4,...
 \end{aligned}
-\right.\}
+\right.
 \end{equation}$$
 
 将公式(3)中的 $a_0$, $a_n$ 和 $b_n$ 带入上式可得，
@@ -289,7 +289,7 @@ C_n &= \frac{a_n +ib_n}{2} \\
 ## 综上所述，连续周期函数 $f(t)$ 的傅里叶级数为：
 
 $$\begin{equation}
-\left\{
+\left\lbrace
 \begin{aligned} \tag{4}
 f(t)&=\sum_{n=-\infty}^{\infty}C_n\cdot e^{inwt} \\
 C_n &= \frac{1}{T}\int_{0}^{T}f(t)e^{-inwt} dt, -\infty<n <\infty \\
@@ -298,7 +298,7 @@ w &= \frac{2\pi}{T}
 \right.
 \end{equation}$$
 
-可以这么理解上述公式：$f(t)$ 中的 $e^{inwt}$ 为系数，$C_n$ 为一系列不同的函数。
+可以这么理解上述公式： $f(t)$ 中的 $e^{inwt}$ 为系数，$C_n$ 为一系列不同的函数。
 在频域（或称之为复平面）展开 $f(t)$，就可以得到
 
 $$ f(t) = ... + C_1 e^{iwt} + C_2 e^{i2wt} + C_3 e^{i3wt} +... \tag{5}$$
@@ -311,13 +311,13 @@ $$ f(t) = ... + C_1 e^{iwt} + C_2 e^{i2wt} + C_3 e^{i3wt} +... \tag{5}$$
 我们将式(4)中的 $w$ 替换为 $w_0$，并将 $C_n$ 中积分上下限 $\int_{0}^{T}$ 变为 $\int_{-\frac{2}{T}}^{\frac{2}{T}}$，则有
 
 $$\begin{equation}
-\left\{
+\left\lbrace
 \begin{aligned} \tag{6}
 f(t)&=\sum_{n=-\infty}^{\infty}C_n\cdot e^{inw_0t} \\
 C_n &= \frac{1}{T}\int_{-\frac{2}{T}}^{\frac{2}{T}}f(t)e^{-inw_0t} dt, -\infty<n <\infty \\
 w_0 &= \frac{2\pi}{T}
 \end{aligned}
-\right.\}
+\right.
 \end{equation}$$
 
 然后将 $\frac{1}{T} = \frac{w_0}{2\pi}$ 代入上式
@@ -341,12 +341,12 @@ $$ f(t) = \frac{1}{2\pi} \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}f(t)e^{-i
 ## 连续非周期函数 $f(t)$ 的傅里叶变换为：
 
 $$\begin{equation}
-\left\{
+\left\lbrace
 \begin{aligned} \tag{8}
 F(w) &= \int_{-\infty}^{\infty}f(t)e^{-iwt} dt  \\
 f(t) &= \frac{1}{2\pi} \int_{-\infty}^{\infty} F(w) e^{iwt}dw
 \end{aligned}
-\right.\}
+\right.
 \end{equation}$$
 
 公式(8)即为傅里叶变换和逆变换。
@@ -360,12 +360,12 @@ f(t) &= \frac{1}{2\pi} \int_{-\infty}^{\infty} F(w) e^{iwt}dw
 
 $$\begin{equation}
 \delta(t)=
-\left\{
+\left\lbrace
 \begin{aligned} \nonumber
 \infty, t=&0  \\
 0, t \neq&0
 \end{aligned}
-\right.\}
+\right.
 \end{equation}$$
 
 冲激函数可看成是幅度无限、持续时间为0、具有单位面积的尖峰信号，因此有性质：
@@ -387,12 +387,12 @@ $$ \int_{-\infty}^{\infty}f(t)\delta(t-t_0)dt = f(t_0) \tag{10} $$
 
 $$\begin{equation}
 \delta(x)=
-\left\{
+\left\lbrace
 \begin{aligned} \nonumber
 1, x=&0  \\
 0, x \neq&0
 \end{aligned}
-\right.\}
+\right.
 \end{equation}$$
 
 很明显，该定义也满足公式(9)的离散等效形式：
@@ -430,12 +430,12 @@ $$ \tilde{F}(\mu) = \int_{-\infty}^{\infty}\tilde{f}(t)e^{-i2\pi \mu t}dt $$
 
 其中 $\mu$ 表示连续频率变量。使用采样公式(11)代替上式中的 $\tilde{f}(\mu)$，则有：
 
-$$ \begin{aligned} \tag{13}
+$$ \begin{aligned}
 \tilde{F}(\mu) &= \int_{-\infty}^{\infty}\tilde{f}(t)e^{-i2\pi \mu t}dt \\
 &= \int_{-\infty}^{\infty}\sum_{n=-\infty}^{\infty}f(t)\delta(t-n{\Delta T})e^{-i2\pi \mu t}dt \\
 & = \sum_{n=-\infty}^{\infty}\int_{-\infty}^{\infty}f(t)\delta(t-n{\Delta T})e^{-i2\pi \mu t}dt \\
 &= \sum_{n=-\infty}^{\infty} f_n e^{-i2\pi \mu n\Delta T}
-\end{aligned} $$
+\end{aligned} \tag{13}$$
 
 其中，最后一步使用了公式(12)。虽然 $f_n$ 是离散函数，但是其傅里叶变换 $\tilde{F}(\mu)$ 是周期为 $\frac{1}{\Delta T}$ 的无限周期连续函数。因此，我们需要表征 $\tilde{F}(\mu)$ 的一个周期，而对一个周期采样是DFT的基础。
 
