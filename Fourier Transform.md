@@ -291,9 +291,9 @@ C_n &= \frac{a_n +ib_n}{2} \\
 $$Cn = \begin{equation}
 \left\lbrace
 \begin{aligned} \nonumber
-f(t) &= \sum_{n=-\infty}^{\infty}C_n\cdot e^{inwt} \\
-C_n &= \frac{1}{T}\int_{0}^{T}f(t)e^{-inwt} dt, -\infty<n <\infty \\
-w &= \frac{2\pi}{T}
+f(t) & \sum_{n=-\infty}^{\infty}C_n\cdot e^{inwt} \\
+&\frac{a_n -ib_n}{2}, n=1,2,3,4,... \\
+&\frac{a_n+ib_n}{2},n=-1,-2,-3,-4,...
 \end{aligned}
 \right.
 \end{equation}$$
