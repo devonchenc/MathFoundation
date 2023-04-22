@@ -114,7 +114,9 @@ b_n &= \frac{2}{T}\int_{0}^{T}f(t)\sin{nwt}dt
 \end{aligned}
 \right.\}
 \end{equation}$$
+
 其中 $w$ 为基频率
+
 $$w = \frac{2\pi}{T}$$
 
 例1：周期函数如下图所示，如何展开成傅里叶级数？
@@ -137,10 +139,10 @@ $$w = \frac{2\pi}{T}$$
 $$w = \frac{2\pi}{T} =\frac{\pi}{10}$$
 
 根据公式(3)，分别计算 $a_0$, $a_n$ 和 $b_n$
-## 3.1 求$a_0$
+## 3.1 求 $a_0$
 $$a_0 = \frac{2}{T}\int_{0}^{T}f(t)dt = \frac{1}{10}(\int_{0}^{10}7dt+\int_{10}^{20}3dt) = \frac{1}{10}(70+30)=10$$
 
-## 3.2 求$a_n$
+## 3.2 求 $a_n$
 $$\begin{aligned}
 a_n &= \frac{2}{T}\int_{0}^{T}f(t)\cos{nwt}dt \\
 &= \frac{1}{10}(\int_{0}^{10}7\cos\frac{n\pi t}{10}dt+\int_{10}^{20}3\cos\frac{n\pi t}{10}dt) \\
@@ -149,7 +151,7 @@ a_n &= \frac{2}{T}\int_{0}^{T}f(t)\cos{nwt}dt \\
 &= 0
 \end{aligned}$$
 
-## 3.3 求$b_n$
+## 3.3 求 $b_n$
 $$\begin{aligned}
 b_n &= \frac{2}{T}\int_{0}^{T}f(t)\sin{nwt}dt \\
 &= \frac{1}{10}(\int_{0}^{10}7\sin\frac{n\pi t}{10}dt+\int_{10}^{20}3\sin\frac{n\pi t}{10}dt) \\
@@ -157,12 +159,12 @@ b_n &= \frac{2}{T}\int_{0}^{T}f(t)\sin{nwt}dt \\
 &= \frac{1}{n\pi}(-7\cos\frac{n\pi t}{10}|_{0}^{10} - 3\cos\frac{n\pi t}{10}|_{10}^{20})
 \end{aligned}$$
 
-当$n$为偶数时，
+当 $n$ 为偶数时，
 
 $$ \cos\frac{n\pi t}{10}|_{0}^{10} = \cos{2\pi}-\cos{0} = 0 $$
 $$ \cos\frac{n\pi t}{10}|_{10}^{20} = \cos{2\pi}-\cos{2\pi} = 0 $$
 
-当$n$为奇数时，
+当 $n$ 为奇数时，
 
 $$\begin{aligned}
 b_n &= \frac{1}{n\pi}(-7\cos\frac{n\pi t}{10}|_{0}^{10} - 3\cos\frac{n\pi t}{10}|_{10}^{20})\\
@@ -179,10 +181,12 @@ $$f(t) = \frac{10}{2}+\sum_{n=1}^{\infty}\frac{8}{n\pi}\cdot \sin\frac{n\pi t}{1
 ![img](images/SquareWave.png)
 
 从图中可以看出周期 $T=2$，所以 $w=\pi$。根据公式(3)，分别计算 $a_0$, $a_n$ 和 $b_n$
-## 3.1 求$a_0$
+## 3.1 求 $a_0$
+
 $$a_0 = \frac{2}{T}\int_{0}^{T}f(t)dt = \int_{0}^{1}1dt+\int_{1}^{2}(-1)dt =0$$
 
-## 3.5 求$a_n$
+## 3.5 求 $a_n$
+
 $$\begin{aligned}
 a_n &= \frac{2}{T}\int_{0}^{T}f(t)\cos{nwt}dt \\
 &= \int_{0}^{1}\cos{n\pi t}dt+\int_{1}^{2}-\cos{n\pi t}dt \\
@@ -191,7 +195,8 @@ a_n &= \frac{2}{T}\int_{0}^{T}f(t)\cos{nwt}dt \\
 &= 0
 \end{aligned}$$
 
-## 3.6 求$b_n$
+## 3.6 求 $b_n$
+
 $$\begin{aligned}
 b_n &= \frac{2}{T}\int_{0}^{T}f(t)\sin{nwt}dt \\
 &= \int_{0}^{1}\sin{n\pi t}dt+\int_{1}^{2}-\sin{n\pi t}dt \\
@@ -200,14 +205,18 @@ b_n &= \frac{2}{T}\int_{0}^{T}f(t)\sin{nwt}dt \\
 &= \frac{1}{n\pi}(-\cos{n\pi}+1+\cos{2n\pi}-\cos{n\pi}) \\
 &= \frac{1}{n\pi}(2-2\cos{n\pi})
 \end{aligned}$$
-当$n$为偶数时，
+当 $n$ 为偶数时，
+
 $$ \cos{n\pi} = 1 $$
 $$ b_n = \frac{1}{n\pi}(2-2\cos{n\pi}) = 0 $$
-当$n$为奇数时，
+
+当 $n$ 为奇数时，
+
 $$ \cos{n\pi} = -1 $$
 $$ b_n = \frac{1}{n\pi}(2+2\cos{n\pi}) = \frac{4}{n\pi} $$
 
 汇总：
+
 $$f(t) = \sum_{n=1}^{\infty}\frac{4}{\pi}\cdot \frac{\sin{n\pi t}}{n}, n=1,3,5,7...$$
 可以看出，$f(t)$ 由一系列的正弦函数组成，分别为
 
