@@ -226,7 +226,8 @@ $$ e^{-i\theta} = \cos\theta - i\sin\theta $$
 $$ \cos\theta = \frac{1}{2}(e^{i\theta}-e^{-i\theta}) $$
 $$ \sin\theta = \frac{1}{2}(e^{i\theta}+e^{-i\theta}) $$
 
-所以将上式代入至$f(t)表达式中可得$
+所以将上式代入至 $f(t)$ 表达式中可得
+
 $$ \begin{aligned}
 f(t) &= \frac{a_0}{2} + \sum_{n=1}^{\infty}(a_n\cos{nwt}+b_n\sin{nwt}) \\
 &= \frac{a_0}{2} + \sum_{n=1}^{\infty}(a_n \cdot\frac{1}{2}(e^{inwt}-e^{-inwt})+b_n\cdot\frac{1}{2}(e^{inwt}+e^{-inwt}))\\
