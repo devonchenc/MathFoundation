@@ -29,6 +29,7 @@ $$ \begin{aligned}
 \end{aligned}$$
 
 汇总：
+
 $$ \begin{equation}
 \left\{
 \begin{aligned} \nonumber
@@ -153,10 +154,12 @@ b_n &= \frac{2}{T}\int_{0}^{T}f(t)\sin{nwt}dt \\
 \end{aligned}$$
 
 当$n$为偶数时，
+
 $$ \cos\frac{n\pi t}{10}|_{0}^{10} = \cos{2\pi}-\cos{0} = 0 $$
 $$ \cos\frac{n\pi t}{10}|_{10}^{20} = \cos{2\pi}-\cos{2\pi} = 0 $$
 
 当$n$为奇数时，
+
 $$\begin{aligned}
 b_n &= \frac{1}{n\pi}(-7\cos\frac{n\pi t}{10}|_{0}^{10} - 3\cos\frac{n\pi t}{10}|_{10}^{20})\\
 &= \frac{1}{n\pi}(-7\cdot -2 - 3 \cdot 2) \\

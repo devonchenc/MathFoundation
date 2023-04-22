@@ -10,7 +10,6 @@ $$ y = a e^{bx}\tag{1}$$
 
 $$ log(y) = \log(a e^{bx}) = \log{a} + bx$$
 
-
 写成矩阵形式如下，
 
 $$Y= \begin{bmatrix}
@@ -24,7 +23,9 @@ b\\
 \log{a}\\
 \end{bmatrix} = X\cdot A \tag{2}$$
 
-其中$Y=log(y)$，$X= \begin{bmatrix}
+其中
+
+$Y=log(y)$，$X= \begin{bmatrix}
 x_1 & 1\\
 x_2 & 1\\
 ... & ...\\
