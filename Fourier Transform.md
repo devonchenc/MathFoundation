@@ -251,24 +251,29 @@ $$Cn = \begin{equation}
 将公式(3)中的 $a_0$, $a_n$ 和 $b_n$ 带入上式可得，
 
 当 $n = 0$ 时
-$$
-C_0 = \frac{a_0}{2} = \frac{1}{2}\cdot\frac{2}{T}\int_{0}^{T}f(t)dt = \frac{1}{T}\int_{0}^{T}f(t)dt 
-$$
+
+$$ C_0 = \frac{a_0}{2} = \frac{1}{2}\cdot\frac{2}{T}\int_{0}^{T}f(t)dt = \frac{1}{T}\int_{0}^{T}f(t)dt $$
+
 当 $n > 0$ 时
+
 $$\begin{aligned}
 C_n &= \frac{a_n -ib_n}{2} \\
 &= \frac{1}{2}(\frac{2}{T}\int_{0}^{T}f(t)\cos{nwt}dt - i\frac{2}{T}\int_{0}^{T}f(t)\sin{nwt}dt) \\
 &= \frac{1}{T}\int_{0}^{T}f(t)(\cos{nwt} - i \sin{nwt})dt \\
 &= \frac{1}{T}\int_{0}^{T}f(t)e^{-inwt} dt
 \end{aligned}$$
+
 当 $n < 0$ 时
+
 $$\begin{aligned}
 C_n &= \frac{a_n +ib_n}{2} \\
 &= \frac{1}{2}(\frac{2}{T}\int_{0}^{T}f(t)\cos{(-nwt)}dt + i\frac{2}{T}\int_{0}^{T}f(t)\sin{(-nwt)}dt) \\
 &= \frac{1}{T}\int_{0}^{T}f(t)(\cos{nwt} - i \sin{nwt})dt \\
 &= \frac{1}{T}\int_{0}^{T}f(t)e^{-inwt} dt
 \end{aligned}$$
+
 ## 综上所述，连续周期函数 $f(t)$ 的傅里叶级数为：
+
 $$\begin{equation}
 \left\{
 \begin{aligned} \tag{4}
