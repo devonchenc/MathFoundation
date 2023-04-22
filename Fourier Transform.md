@@ -48,7 +48,7 @@ $$ \begin{equation}
 
 $$ f(x) = \sum_{n=0}^{\infty}a_n\cos{nx}+\sum_{n=0}^{\infty}b_n\sin{nx} $$
 
-更常见的写法是：（两种写法的$a_0$差了一倍）
+更常见的写法是：（两种写法的 $a_0$ 差了一倍）
 
 $$ f(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty}(a_n\cos{nx}+b_n\sin{nx}) \tag{1} $$
 
