@@ -290,10 +290,10 @@ C_n &= \frac{a_n +ib_n}{2} \\
 
 $$\begin{equation}
 \left\lbrace
-\begin{aligned} \nonumber
+\begin{aligned}
 f(t) &= \sum_{n=-\infty}^{\infty}C_n\cdot e^{inwt} \\
-&= \frac{a_n -ib_n}{2}, n=1,2,3,4,... \\
-&= \frac{a_n+ib_n}{2},n=-1,-2,-3,-4,...
+C_n &= \frac{a_n -ib_n}{2}, n=1,2,3,4,... \\
+w &= \frac{a_n+ib_n}{2},n=-1,-2,-3,-4,...
 \end{aligned}
 \right.
 \end{equation} \tag{4}$$
