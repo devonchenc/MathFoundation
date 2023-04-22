@@ -55,12 +55,14 @@ $$ f(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty}(a_n\cos{nx}+b_n\sin{nx}) \tag{1} $
 如何计算出系数 $a_0,a_1,...,a_n,b_0,b_1,...,b_n$？
 
 ## 2.1 求$a_0$
-试将函数$f(x)$在$(-\pi, \pi)$区间进行积分，可得
+试将函数 $f(x)$ 在 $(-\pi, \pi)$ 区间进行积分，可得
+
 $$ \int_{-\pi}^{\pi}f(x)dx = \int_{-\pi}^{\pi}\frac{a_0}{2}dx = a_0\pi $$
 
 $$ \therefore a_0 = \frac{1}{\pi}\int_{-\pi}^{\pi}f(x)dx $$
 
 ## 2.2 求$a_n$
+
 $$ \int_{-\pi}^{\pi}f(x)\cos{mx}dx =\int_{-\pi}^{\pi}\frac{a_0}{2}\cos{mx}dx +   \int_{-\pi}^{\pi}a_n\cos{nx}\cdot\cos{mx}dx + \int_{-\pi}^{\pi}b_n\sin{nx}\cdot\cos{mx}dx$$
 
 其中第一项 $\int_{-\pi}^{\pi}\frac{a_0}{2}\cos{mx}dx = 0$，第三项 $\int_{-\pi}^{\pi}b_n\sin{nx}\cdot\cos{mx}dx = 0$，所以
