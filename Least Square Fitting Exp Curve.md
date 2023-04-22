@@ -25,12 +25,12 @@ b\\
 
 其中
 
-$Y=log(y)$，$X= \begin{bmatrix}
+$Y=log(y)$ ， $X= \begin{bmatrix}
 x_1 & 1\\
 x_2 & 1\\
 ... & ...\\
 x_n & 1
-\end{bmatrix}$，$A = (b,\log{a})^T$
+\end{bmatrix}$ ， $A = (b,\log{a})^T$
 
 由式(2)，可得
 
