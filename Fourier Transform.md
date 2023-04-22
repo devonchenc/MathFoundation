@@ -296,9 +296,9 @@ C_n &= \frac{1}{T}\int_{0}^{T}f(t)e^{-inwt} dt, -\infty<n <\infty \\
 w &= \frac{2\pi}{T}
 \end{aligned}
 \right.
-\end{equation} \tag{4}$$
+\end{equation}$$
 
-可以这么理解上述公式： $f(t)$ 中的 $e^{inwt}$ 为系数，$C_n$ 为一系列不同的函数。
+可以这么理解上述公式： $f(t)$ 中的 $e^{inwt}$ 为系数， $C_n$ 为一系列不同的函数。
 在频域（或称之为复平面）展开 $f(t)$，就可以得到
 
 $$ f(t) = ... + C_1 e^{iwt} + C_2 e^{i2wt} + C_3 e^{i3wt} +... \tag{5}$$
