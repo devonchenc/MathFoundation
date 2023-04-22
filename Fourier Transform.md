@@ -314,7 +314,7 @@ $$\begin{equation}
 \left\lbrace
 \begin{aligned}
 f(t)&=\sum_{n=-\infty}^{\infty}C_n\cdot e^{inw_0t} \\
-C_n &= \frac{1}{T}\int_{-\frac{2}{T}}^{\frac{2}{T}}f(t)e^{-inw_0t} dt, -{\infty}<n  \\
+C_n &= \frac{1}{T}\int_{-\frac{2}{T}}^{\frac{2}{T}}f(t)e^{-inw_0t} dt, -{\infty}{<}n  \\
 w_0 &= \frac{2\pi}{T}
 \end{aligned}
 \right.
